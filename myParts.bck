@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP STM32F469ZITx
+D ARM Cortex-M4 MCU, 2048KB flash, 320KB RAM, 180MHz, 1.7-3.6V, 106 GPIO, LQFP-144
+K ARM Cortex-M4 STM32F4 STM32F469/479
+F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00219980.pdf
+$ENDCMP
+#
+#End Doc Library
