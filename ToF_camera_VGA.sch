@@ -1787,113 +1787,47 @@ Wire Wire Line
 Connection ~ 13150 8550
 Wire Wire Line
 	13150 8550 13250 8550
-Text Label 2600 7750 0    50   ~ 0
+Text Label 6700 2450 2    50   ~ 0
 CLK-
-Text Label 2600 7850 0    50   ~ 0
+Text Label 6700 2350 2    50   ~ 0
 CLK+
-Text Label 2600 7950 0    50   ~ 0
+Text Label 6700 3050 2    50   ~ 0
 D1-
-Text Label 2600 8050 0    50   ~ 0
+Text Label 6700 2950 2    50   ~ 0
 D1+
-Text Label 2600 8150 0    50   ~ 0
+Text Label 6700 2750 2    50   ~ 0
 D2-
-Text Label 2600 8250 0    50   ~ 0
+Text Label 6700 2650 2    50   ~ 0
 D2+
-Text Label 2600 8350 0    50   ~ 0
+Text Label 6700 2150 2    50   ~ 0
 D3-
-Text Label 2600 8450 0    50   ~ 0
+Text Label 6700 2050 2    50   ~ 0
 D3+
-Text Label 2600 8550 0    50   ~ 0
+Text Label 6700 1850 2    50   ~ 0
 D4-
-Text Label 2600 8650 0    50   ~ 0
+Text Label 6700 1750 2    50   ~ 0
 D4+
 $Comp
 L power:GNDD #PWR0121
 U 1 1 5D5B0EF6
-P 1900 10000
-F 0 "#PWR0121" H 1900 9750 50  0001 C CNN
-F 1 "GNDD" H 1904 9845 50  0000 C CNN
-F 2 "" H 1900 10000 50  0001 C CNN
-F 3 "" H 1900 10000 50  0001 C CNN
-	1    1900 10000
+P 6650 3200
+F 0 "#PWR0121" H 6650 2950 50  0001 C CNN
+F 1 "GNDD" H 6654 3045 50  0000 C CNN
+F 2 "" H 6650 3200 50  0001 C CNN
+F 3 "" H 6650 3200 50  0001 C CNN
+	1    6650 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1850 7850 1900 7850
-Wire Wire Line
-	1900 7850 1900 8150
-Wire Wire Line
-	1850 8150 1900 8150
-Connection ~ 1900 8150
-Wire Wire Line
-	1900 8150 1900 8450
-Wire Wire Line
-	1850 8450 1900 8450
-Connection ~ 1900 8450
-Wire Wire Line
-	1900 8450 1900 8750
-Wire Wire Line
-	1850 8750 1900 8750
-Connection ~ 1900 8750
-Wire Wire Line
-	1900 8750 1900 9050
-Wire Wire Line
-	1850 9050 1900 9050
-Connection ~ 1900 9050
-Wire Wire Line
-	1900 9050 1900 9350
-Wire Wire Line
-	1850 9350 1900 9350
-Connection ~ 1900 9350
-Wire Wire Line
-	1900 9350 1900 9650
-Wire Wire Line
-	1850 9650 1900 9650
-Connection ~ 1900 9650
-Wire Wire Line
-	1900 9650 1900 10000
-Wire Wire Line
-	1950 8150 1950 8250
-Wire Wire Line
-	1950 8250 1850 8250
-Wire Wire Line
-	1850 8350 2000 8350
-Wire Wire Line
-	2000 8350 2000 8250
-Wire Wire Line
-	1850 8550 2050 8550
-Wire Wire Line
-	2050 8550 2050 7750
-Wire Wire Line
-	1850 8650 2150 8650
-Wire Wire Line
-	2150 8650 2150 7850
-Wire Wire Line
-	1850 8850 2200 8850
-Wire Wire Line
-	2200 8850 2200 8350
-Wire Wire Line
-	2250 8450 2250 8950
-Wire Wire Line
-	2250 8950 1850 8950
-Wire Wire Line
-	2300 8550 2300 9150
-Wire Wire Line
-	2300 9150 1850 9150
-Wire Wire Line
-	2350 8650 2350 9250
-Wire Wire Line
-	2350 9250 1850 9250
 $Comp
 L Connector_Generic:Conn_01x02 J8
 U 1 1 5DA2C63C
-P 2050 9450
-F 0 "J8" H 2130 9442 50  0000 L CNN
-F 1 "Conn_01x02" H 2130 9351 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2050 9450 50  0001 C CNN
-F 3 "~" H 2050 9450 50  0001 C CNN
-	1    2050 9450
-	1    0    0    -1  
+P 6500 1550
+F 0 "J8" H 6580 1542 50  0000 L CNN
+F 1 "Conn_01x02" H 6580 1451 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6500 1550 50  0001 C CNN
+F 3 "~" H 6500 1550 50  0001 C CNN
+	1    6500 1550
+	-1   0    0    1   
 $EndComp
 $Comp
 L Interface:PCA9306 U6
@@ -1946,31 +1880,22 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x22 J1
 U 1 1 5D5B5F7E
-P 1650 8850
-F 0 "J1" H 1568 10067 50  0000 C CNN
-F 1 "Conn_01x22" H 1568 9976 50  0000 C CNN
-F 2 "myFootprints:FPC_22" H 1650 8850 50  0001 C CNN
-F 3 "~" H 1650 8850 50  0001 C CNN
-	1    1650 8850
-	-1   0    0    -1  
+P 6900 2050
+F 0 "J1" H 6818 3267 50  0000 C CNN
+F 1 "Conn_01x22" H 6818 3176 50  0000 C CNN
+F 2 "myFootprints:FPC_22" H 6900 2050 50  0001 C CNN
+F 3 "~" H 6900 2050 50  0001 C CNN
+	1    6900 2050
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1900 7350 1900 7850
-Connection ~ 1900 7850
 Text Label 1800 6200 0    50   ~ 0
 3V3_Pi
-Text Label 2000 9950 0    50   ~ 0
+Text Label 6700 1050 2    50   ~ 0
 3V3_Pi
-Wire Wire Line
-	1850 9950 2000 9950
-Text Label 2000 9750 0    50   ~ 0
+Text Label 6700 1250 2    50   ~ 0
 SCL_Pi
-Text Label 2000 9850 0    50   ~ 0
+Text Label 6700 1150 2    50   ~ 0
 SDA_Pi
-Wire Wire Line
-	1850 9750 2000 9750
-Wire Wire Line
-	1850 9850 2000 9850
 Text Label 1500 6850 2    50   ~ 0
 SCL_Pi
 Text Label 1500 6950 2    50   ~ 0
@@ -1981,24 +1906,171 @@ Text Label 6250 5850 2    50   ~ 0
 VDDMIX
 Wire Wire Line
 	6250 5800 6250 5950
+Text Notes 3300 700  0    50   ~ 0
+J3 connector on Zynqberry is rotated, so that our connector can be drawn in regular manner
+Text Notes 4050 2250 0    50   ~ 0
+15 - +3.3 V\n14 - SDA \n13 - SCL\n12 - GPIO1\n11 - GPIO0\n10 - GND\n9 - CLK+\n8 - CLK-\n7 - GND\n6 - D1+\n5 - D1-\n4 - GND\n3 - D0+\n2 - D0-\n1 - GND
+Text Notes 5200 1100 0    50   ~ 0
++3.3v -1\nSDA - 2\nSCL  - 3
+Text Notes 5200 1150 0    50   Italic 10
+nc      - 4
+Text Notes 5200 1300 0    50   ~ 0
+GPIO1 -5\nGPIO0 -6
+Text Notes 5200 1800 0    50   Italic 10
+GND  - 7\nD3+  - 8\nD3-   - 9\nGND - 10\nD2+  - 11\nD2-   - 12
+Text Notes 5200 2600 0    50   ~ 0
+GND - 13\nCLK+ - 14\nCLK- - 15\nGND - 16\nD1+  - 17\nD1-   - 18\nGND - 19\nD0+  - 20\nD0-   - 21\nGND - 22
+Wire Notes Line
+	4400 2200 4550 2200
+Wire Notes Line
+	4550 2200 4550 2550
+Wire Notes Line
+	4550 2550 5150 2550
+Wire Notes Line
+	5150 2500 4600 2500
+Wire Notes Line
+	4600 2500 4600 2150
+Wire Notes Line
+	4600 2150 4450 2150
+Wire Notes Line
+	4450 2050 4650 2050
+Wire Notes Line
+	4650 2050 4650 2400
+Wire Notes Line
+	4650 2400 5150 2400
+Wire Notes Line
+	4450 2000 4700 2000
+Wire Notes Line
+	4700 2000 4700 2300
+Wire Notes Line
+	4700 2300 5150 2300
+Wire Notes Line
+	4450 1900 4750 1900
+Wire Notes Line
+	4750 1900 4750 2250
+Wire Notes Line
+	4750 2250 5150 2250
+Wire Notes Line
+	4450 1850 4800 1850
+Wire Notes Line
+	4800 1850 4800 2150
+Wire Notes Line
+	4800 2150 5150 2150
+Wire Notes Line
+	5150 2100 4850 2100
+Wire Notes Line
+	4850 2100 4850 1750
+Wire Notes Line
+	4850 1750 4450 1750
+Wire Notes Line
+	5150 2000 4900 2000
+Wire Notes Line
+	4900 2000 4900 1650
+Wire Notes Line
+	4900 1650 4450 1650
+Wire Notes Line
+	4450 1600 4950 1600
+Wire Notes Line
+	4950 1600 4950 1900
+Wire Notes Line
+	4950 1900 5150 1900
+Wire Notes Line
+	5150 1850 5000 1850
+Wire Notes Line
+	5000 1850 5000 1500
+Wire Notes Line
+	5000 1500 4500 1500
+Wire Notes Line
+	4550 1400 5000 1400
+Wire Notes Line
+	5000 1400 5000 1250
+Wire Notes Line
+	5000 1250 5150 1250
+Wire Notes Line
+	5150 1200 4950 1200
+Wire Notes Line
+	4950 1200 4950 1350
+Wire Notes Line
+	4950 1350 4550 1350
+Wire Notes Line
+	4450 1250 4850 1250
+Wire Notes Line
+	4850 1250 4850 1050
+Wire Notes Line
+	4850 1050 5150 1050
+Wire Notes Line
+	5150 1000 4800 1000
+Wire Notes Line
+	4800 1000 4800 1150
+Wire Notes Line
+	4800 1150 4500 1150
+Wire Notes Line
+	4600 1100 4750 1100
+Wire Notes Line
+	4750 1100 4750 900 
+Wire Notes Line
+	4750 900  5150 900 
+Text Notes 3300 800  0    50   Italic 10
+It isn't exact drawing, but connectors should be connected in similar way using standard Raspberry Pi cable-adapter
+$Comp
+L power:GNDD #PWR?
+U 1 1 5D9DAA50
+P 1900 7350
+F 0 "#PWR?" H 1900 7100 50  0001 C CNN
+F 1 "GNDD" H 1904 7195 50  0000 C CNN
+F 2 "" H 1900 7350 50  0001 C CNN
+F 3 "" H 1900 7350 50  0001 C CNN
+	1    1900 7350
+	1    0    0    -1  
+$EndComp
+Text Label 4350 7750 2    50   ~ 0
+CLK-
+Text Label 4350 7850 2    50   ~ 0
+CLK+
+Text Label 4350 7950 2    50   ~ 0
+D1-
+Text Label 4350 8050 2    50   ~ 0
+D1+
+Text Label 4350 8150 2    50   ~ 0
+D2-
+Text Label 4350 8250 2    50   ~ 0
+D2+
+Text Label 4350 8350 2    50   ~ 0
+D3-
+Text Label 4350 8450 2    50   ~ 0
+D3+
+Text Label 4350 8550 2    50   ~ 0
+D4-
+Text Label 4350 8650 2    50   ~ 0
+D4+
+NoConn ~ 6700 1350
 Wire Wire Line
-	2300 8550 4350 8550
+	6700 1650 6650 1650
 Wire Wire Line
-	2350 8650 4350 8650
+	6650 1650 6650 1950
 Wire Wire Line
-	2200 8350 4350 8350
+	6700 3150 6650 3150
+Connection ~ 6650 3150
 Wire Wire Line
-	2250 8450 4350 8450
+	6650 3150 6650 3200
 Wire Wire Line
-	1950 8150 4350 8150
+	6700 2850 6650 2850
+Connection ~ 6650 2850
 Wire Wire Line
-	2000 8250 4350 8250
+	6650 2850 6650 3150
 Wire Wire Line
-	1850 7950 4350 7950
+	6700 2550 6650 2550
+Connection ~ 6650 2550
 Wire Wire Line
-	1850 8050 4350 8050
+	6650 2550 6650 2850
 Wire Wire Line
-	2050 7750 4350 7750
+	6650 2250 6700 2250
+Connection ~ 6650 2250
 Wire Wire Line
-	2150 7850 4350 7850
+	6650 2250 6650 2550
+Wire Wire Line
+	6700 1950 6650 1950
+Connection ~ 6650 1950
+Wire Wire Line
+	6650 1950 6650 2250
 $EndSCHEMATC
