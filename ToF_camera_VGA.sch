@@ -865,22 +865,9 @@ Wire Wire Line
 	4000 6600 4000 6650
 Wire Wire Line
 	4000 6650 4350 6650
-$Comp
-L Connector_Generic:Conn_01x08 J2
-U 1 1 5D7435B4
-P 2650 7150
-F 0 "J2" H 2568 6525 50  0000 C CNN
-F 1 "Conn_01x08" H 2568 6616 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 2650 7150 50  0001 C CNN
-F 3 "~" H 2650 7150 50  0001 C CNN
-	1    2650 7150
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2850 6750 4350 6750
 Connection ~ 3350 6850
-Wire Wire Line
-	2850 6950 3050 6950
 Connection ~ 3050 6950
 Wire Wire Line
 	2850 7050 4350 7050
@@ -888,8 +875,6 @@ Wire Wire Line
 	2850 7150 4350 7150
 Wire Wire Line
 	4350 7250 2850 7250
-Wire Wire Line
-	2850 7450 4350 7450
 Wire Wire Line
 	4100 7550 4200 7550
 Wire Wire Line
@@ -899,11 +884,7 @@ Connection ~ 3650 7350
 Wire Wire Line
 	4200 7550 4200 7800
 Wire Wire Line
-	4200 7800 3050 7800
-Wire Wire Line
-	3050 7800 3050 7350
-Wire Wire Line
-	3050 7350 2850 7350
+	4200 7800 3400 7800
 Connection ~ 4200 7550
 Wire Wire Line
 	4200 7550 4350 7550
@@ -1283,7 +1264,7 @@ Wire Wire Line
 	12100 4350 12100 4400
 Connection ~ 12100 4400
 Text Label 12250 5100 0    50   ~ 0
-PGOOD_VDD
+PGOOD_1.8V
 Wire Wire Line
 	12250 5100 11750 5100
 Connection ~ 11750 5100
@@ -1462,7 +1443,7 @@ Wire Wire Line
 	3850 4400 3850 4450
 Connection ~ 3850 4450
 Text Label 4000 5150 0    50   ~ 0
-PGOOD_VDD
+PGOOD_VDDA
 Wire Wire Line
 	4000 5150 3500 5150
 Connection ~ 3500 5150
@@ -1824,7 +1805,7 @@ U 1 1 5DA2C63C
 P 6500 1550
 F 0 "J8" H 6580 1542 50  0000 L CNN
 F 1 "Conn_01x02" H 6580 1451 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6500 1550 50  0001 C CNN
+F 2 "Resistors_SMD:R_0201_NoSilk" H 6500 1550 50  0001 C CNN
 F 3 "~" H 6500 1550 50  0001 C CNN
 	1    6500 1550
 	-1   0    0    1   
@@ -1843,14 +1824,6 @@ $EndComp
 Wire Wire Line
 	2850 5300 3850 5300
 Wire Wire Line
-	2300 6850 2850 6850
-Connection ~ 2850 6850
-Wire Wire Line
-	2850 6850 3350 6850
-Wire Wire Line
-	2300 6950 2850 6950
-Connection ~ 2850 6950
-Wire Wire Line
 	3050 6250 3050 6350
 Connection ~ 3050 6350
 $Comp
@@ -1867,7 +1840,7 @@ $EndComp
 Wire Wire Line
 	2350 6750 2300 6750
 Wire Wire Line
-	3050 6250 2900 6250
+	3050 6250 2950 6250
 Wire Wire Line
 	2600 6250 2350 6250
 Connection ~ 2350 6250
@@ -2013,10 +1986,10 @@ Wire Notes Line
 Text Notes 3300 800  0    50   Italic 10
 It isn't exact drawing, but connectors should be connected in similar way using standard Raspberry Pi cable-adapter
 $Comp
-L power:GNDD #PWR?
+L power:GNDD #PWR0122
 U 1 1 5D9DAA50
 P 1900 7350
-F 0 "#PWR?" H 1900 7100 50  0001 C CNN
+F 0 "#PWR0122" H 1900 7100 50  0001 C CNN
 F 1 "GNDD" H 1904 7195 50  0000 C CNN
 F 2 "" H 1900 7350 50  0001 C CNN
 F 3 "" H 1900 7350 50  0001 C CNN
@@ -2073,4 +2046,154 @@ Wire Wire Line
 Connection ~ 6650 1950
 Wire Wire Line
 	6650 1950 6650 2250
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5DF82595
+P 2650 7250
+F 0 "J3" H 2568 6825 50  0000 C CNN
+F 1 "Conn_01x04" H 2568 6916 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 2650 7250 50  0001 C CNN
+F 3 "~" H 2650 7250 50  0001 C CNN
+	1    2650 7250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 6950 3050 6950
+Wire Wire Line
+	2300 6850 3350 6850
+Wire Wire Line
+	4350 7450 3100 7450
+Wire Wire Line
+	3100 7450 3100 7350
+Wire Wire Line
+	3100 7350 2850 7350
+$Comp
+L Device:R R17
+U 1 1 5E0FFBBD
+P 3200 7600
+F 0 "R17" V 2993 7600 50  0000 C CNN
+F 1 "R" V 3084 7600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3130 7600 50  0001 C CNN
+F 3 "~" H 3200 7600 50  0001 C CNN
+	1    3200 7600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 6250 2950 7600
+Wire Wire Line
+	2950 7600 3050 7600
+Connection ~ 2950 6250
+Wire Wire Line
+	2950 6250 2900 6250
+Wire Wire Line
+	3350 7600 3400 7600
+Wire Wire Line
+	3400 7600 3400 7800
+Connection ~ 3400 7800
+Wire Wire Line
+	3400 7800 3050 7800
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5E1730FD
+P 2850 7800
+F 0 "J4" H 2768 7575 50  0000 C CNN
+F 1 "Conn_01x01" H 2768 7666 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 2850 7800 50  0001 C CNN
+F 3 "~" H 2850 7800 50  0001 C CNN
+	1    2850 7800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5E1738BE
+P 2650 6750
+F 0 "J2" H 2568 6525 50  0000 C CNN
+F 1 "Conn_01x01" H 2568 6616 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 2650 6750 50  0001 C CNN
+F 3 "~" H 2650 6750 50  0001 C CNN
+	1    2650 6750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J5
+U 1 1 5E1916FE
+P 9200 1650
+F 0 "J5" H 9118 1225 50  0000 C CNN
+F 1 "Conn_01x04" H 9118 1316 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 9200 1650 50  0001 C CNN
+F 3 "~" H 9200 1650 50  0001 C CNN
+	1    9200 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J6
+U 1 1 5E1961FC
+P 9200 2500
+F 0 "J6" H 9118 2075 50  0000 C CNN
+F 1 "Conn_01x04" H 9118 2166 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 9200 2500 50  0001 C CNN
+F 3 "~" H 9200 2500 50  0001 C CNN
+	1    9200 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0123
+U 1 1 5E196C75
+P 9550 1350
+F 0 "#PWR0123" H 9550 1200 50  0001 C CNN
+F 1 "+12V" H 9565 1523 50  0000 C CNN
+F 2 "" H 9550 1350 50  0001 C CNN
+F 3 "" H 9550 1350 50  0001 C CNN
+	1    9550 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0124
+U 1 1 5E1971BC
+P 9550 2700
+F 0 "#PWR0124" H 9550 2450 50  0001 C CNN
+F 1 "GNDD" H 9554 2545 50  0000 C CNN
+F 2 "" H 9550 2700 50  0001 C CNN
+F 3 "" H 9550 2700 50  0001 C CNN
+	1    9550 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 1450 9550 1450
+Wire Wire Line
+	9550 1450 9550 1350
+Wire Wire Line
+	9400 1750 9550 1750
+Connection ~ 9550 1450
+Wire Wire Line
+	9400 1550 9550 1550
+Connection ~ 9550 1550
+Wire Wire Line
+	9550 1550 9550 1450
+Wire Wire Line
+	9400 1650 9550 1650
+Wire Wire Line
+	9550 1550 9550 1650
+Connection ~ 9550 1650
+Wire Wire Line
+	9550 1650 9550 1750
+Wire Wire Line
+	9400 2300 9550 2300
+Wire Wire Line
+	9550 2300 9550 2400
+Wire Wire Line
+	9400 2400 9550 2400
+Connection ~ 9550 2400
+Wire Wire Line
+	9550 2400 9550 2500
+Wire Wire Line
+	9400 2500 9550 2500
+Connection ~ 9550 2500
+Wire Wire Line
+	9550 2500 9550 2600
+Wire Wire Line
+	9400 2600 9550 2600
+Connection ~ 9550 2600
+Wire Wire Line
+	9550 2600 9550 2700
 $EndSCHEMATC
