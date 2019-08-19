@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ToF_camera_VGA-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -2196,4 +2196,21 @@ Wire Wire Line
 Connection ~ 9550 2600
 Wire Wire Line
 	9550 2600 9550 2700
+$Comp
+L Device:L L1
+U 1 1 5D5EC021
+P 4850 5300
+F 0 "L1" V 5040 5300 50  0000 C CNN
+F 1 "L" V 4949 5300 50  0000 C CNN
+F 2 "Inductors:Inductor_1212" H 4850 5300 50  0001 C CNN
+F 3 "~" H 4850 5300 50  0001 C CNN
+	1    4850 5300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 5300 5800 5300
+Connection ~ 5800 5300
+Wire Wire Line
+	4700 5300 3850 5300
+Connection ~ 3850 5300
 $EndSCHEMATC
