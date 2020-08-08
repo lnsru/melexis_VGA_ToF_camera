@@ -1,5 +1,15 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 54548-2271_connector_RPi_zero
+D FFC & FPC Connectors 0.5 FPC ZIF Hsg Assy ssy 22Ckt EmbsTp Pkg
+F http://www.molex.com/webdocs/datasheets/pdf/en-us//0545482271_FFC_FPC_CONNECTORS.pdf
+$ENDCMP
+#
+$CMP DSC6011JI1A-008.0000_clock_source
+D Standard Clock Oscillators MEMS Oscillator Ultr a Low PWR LVCMOS -
+F https://componentsearchengine.com/Datasheets/1/DSC6011JI1A-008.0000.pdf
+$ENDCMP
+#
 $CMP STM32F469ZITx
 D ARM Cortex-M4 MCU, 2048KB flash, 320KB RAM, 180MHz, 1.7-3.6V, 106 GPIO, LQFP-144
 K ARM Cortex-M4 STM32F4 STM32F469/479
