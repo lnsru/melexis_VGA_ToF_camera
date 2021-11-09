@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 503480-2200
+D 503480-2200
+F http://www.molex.com/webdocs/datasheets/pdf/en-us/5034802200_FFC_FPC_CONNECTORS.pdf
+$ENDCMP
+#
 $CMP 54548-2271_connector_RPi_zero
 D FFC & FPC Connectors 0.5 FPC ZIF Hsg Assy ssy 22Ckt EmbsTp Pkg
 F http://www.molex.com/webdocs/datasheets/pdf/en-us//0545482271_FFC_FPC_CONNECTORS.pdf

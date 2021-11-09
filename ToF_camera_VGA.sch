@@ -784,23 +784,23 @@ $EndComp
 $Comp
 L Device:R R2
 U 1 1 5D67880E
-P 8350 9350
-F 0 "R2" H 8420 9396 50  0000 L CNN
-F 1 "1k5" H 8420 9305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 8280 9350 50  0001 C CNN
-F 3 "~" H 8350 9350 50  0001 C CNN
-	1    8350 9350
+P 9300 9400
+F 0 "R2" H 9370 9446 50  0000 L CNN
+F 1 "1k5" H 9370 9355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9230 9400 50  0001 C CNN
+F 3 "~" H 9300 9400 50  0001 C CNN
+	1    9300 9400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5D678C86
-P 8050 9400
-F 0 "R1" H 8120 9446 50  0000 L CNN
-F 1 "1k5" H 8120 9355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7980 9400 50  0001 C CNN
-F 3 "~" H 8050 9400 50  0001 C CNN
-	1    8050 9400
+P 9000 9450
+F 0 "R1" H 9070 9496 50  0000 L CNN
+F 1 "1k5" H 9070 9405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8930 9450 50  0001 C CNN
+F 3 "~" H 9000 9450 50  0001 C CNN
+	1    9000 9450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -3479,114 +3479,30 @@ D8 00 00 00 94 8E C4 06 00 00 A0 74 24 36 00 00 00 A5 23 B1 01 00 00 28 1D 89 0D
 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text Label 3700 10150 2    50   ~ 0
+Text Label 4900 9950 2    50   ~ 0
 3V3_Pi
-Text Label 3700 10050 2    50   ~ 0
-SDA_Pi
-Text Label 3700 9950 2    50   ~ 0
-SCL_Pi
 $Comp
 L Connector_Generic:Conn_01x02 J7
 U 1 1 5F6AEB00
-P 3550 9750
-F 0 "J7" H 3630 9742 50  0000 L CNN
-F 1 "Conn_01x02" H 3630 9651 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3550 9750 50  0001 C CNN
-F 3 "~" H 3550 9750 50  0001 C CNN
-	1    3550 9750
+P 6000 9750
+F 0 "J7" H 6080 9742 50  0000 L CNN
+F 1 "Conn_01x02" H 6080 9651 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6000 9750 50  0001 C CNN
+F 3 "~" H 6000 9750 50  0001 C CNN
+	1    6000 9750
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GNDD #PWR0112
 U 1 1 5F7B5620
-P 3800 10450
-F 0 "#PWR0112" H 3800 10200 50  0001 C CNN
-F 1 "GNDD" H 3804 10295 50  0000 C CNN
-F 2 "" H 3800 10450 50  0001 C CNN
-F 3 "" H 3800 10450 50  0001 C CNN
-	1    3800 10450
+P 5000 10250
+F 0 "#PWR0112" H 5000 10000 50  0001 C CNN
+F 1 "GNDD" H 5004 10095 50  0000 C CNN
+F 2 "" H 5000 10250 50  0001 C CNN
+F 3 "" H 5000 10250 50  0001 C CNN
+	1    5000 10250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3800 9850 3900 9850
-Wire Wire Line
-	3900 9550 3800 9550
-Wire Wire Line
-	3800 9550 3800 9850
-Connection ~ 3800 9850
-Wire Wire Line
-	3900 9250 3800 9250
-Wire Wire Line
-	3800 9250 3800 9550
-Connection ~ 3800 9550
-Wire Wire Line
-	3900 8950 3800 8950
-Wire Wire Line
-	3800 8950 3800 9250
-Connection ~ 3800 9250
-Wire Wire Line
-	3900 8650 3800 8650
-Wire Wire Line
-	3800 8650 3800 8950
-Connection ~ 3800 8950
-Wire Wire Line
-	3900 8350 3800 8350
-Wire Wire Line
-	3800 8350 3800 8650
-Connection ~ 3800 8650
-Wire Wire Line
-	3900 8050 3800 8050
-Wire Wire Line
-	3800 8050 3800 8350
-Connection ~ 3800 8350
-Wire Wire Line
-	3750 9650 3900 9650
-Wire Wire Line
-	3900 9750 3750 9750
-Text Label 3700 8150 2    50   ~ 0
-D1-
-Text Label 3700 8250 2    50   ~ 0
-D1+
-Text Label 3700 8450 2    50   ~ 0
-D2-
-Text Label 3700 8550 2    50   ~ 0
-D2+
-Text Label 3700 8750 2    50   ~ 0
-CLK-
-Text Label 3700 8850 2    50   ~ 0
-CLK+
-Text Label 3700 9350 2    50   ~ 0
-D4-
-Text Label 3700 9450 2    50   ~ 0
-D4+
-Text Label 3700 9150 2    50   ~ 0
-D3+
-Text Label 3700 9050 2    50   ~ 0
-D3-
-Wire Wire Line
-	3700 8150 3900 8150
-Wire Wire Line
-	3700 8250 3900 8250
-Wire Wire Line
-	3700 8450 3900 8450
-Wire Wire Line
-	3700 8550 3900 8550
-Wire Wire Line
-	3700 8750 3900 8750
-Wire Wire Line
-	3700 8850 3900 8850
-Wire Wire Line
-	3700 9050 3900 9050
-Wire Wire Line
-	3700 9150 3900 9150
-Wire Wire Line
-	3700 9350 3900 9350
-Wire Wire Line
-	3700 9450 3900 9450
-Wire Wire Line
-	3700 9950 3900 9950
-Wire Wire Line
-	3700 10050 3900 10050
 $Comp
 L Regulator_Linear:LP5907MFX-1.8 U1
 U 1 1 5FDC0C86
@@ -3844,35 +3760,33 @@ System voltages:\nVDDA - 2.7 V, 40 mA\n       TI 2.8 VLDO\nVDDMIX - 1.2 V, 3 A\n
 $Comp
 L Device:C C13
 U 1 1 6067A21E
-P 3900 10300
-F 0 "C13" H 4015 10346 50  0000 L CNN
-F 1 "10u" H 4015 10255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3938 10150 50  0001 C CNN
-F 3 "~" H 3900 10300 50  0001 C CNN
-	1    3900 10300
+P 5100 10100
+F 0 "C13" H 5215 10146 50  0000 L CNN
+F 1 "10u" H 5215 10055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5138 9950 50  0001 C CNN
+F 3 "~" H 5100 10100 50  0001 C CNN
+	1    5100 10100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 10450 3800 10450
+	5100 10250 5000 10250
+Connection ~ 5000 10250
 Wire Wire Line
-	3800 9850 3800 10450
-Connection ~ 3800 10450
+	4900 9950 5100 9950
 Wire Wire Line
-	3700 10150 3900 10150
-Wire Wire Line
-	3700 10450 3800 10450
+	4900 10250 5000 10250
 $Comp
 L Device:LED D1
 U 1 1 607B67CF
-P 3700 10300
-F 0 "D1" V 3739 10380 50  0000 L CNN
-F 1 "LED" V 3648 10380 50  0000 L CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 3700 10300 50  0001 C CNN
-F 3 "~" H 3700 10300 50  0001 C CNN
-	1    3700 10300
+P 4900 10100
+F 0 "D1" V 4939 10180 50  0000 L CNN
+F 1 "LED" V 4848 10180 50  0000 L CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 4900 10100 50  0001 C CNN
+F 3 "~" H 4900 10100 50  0001 C CNN
+	1    4900 10100
 	0    1    -1   0   
 $EndComp
-Text Notes 3350 10800 0    50   ~ 0
+Text Notes 4550 10600 0    50   ~ 0
 LED: 156120GS75300
 $Comp
 L Device:CP CP27
@@ -3921,95 +3835,95 @@ Wire Wire Line
 $Comp
 L Interface:PCA9306 U5
 U 1 1 60B2008F
-P 7550 9550
-F 0 "U5" H 7750 9050 50  0000 C CNN
-F 1 "PCA9306" H 7250 9050 50  0000 C CNN
-F 2 "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm" H 7150 9900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/pca9306.pdf" H 7250 10000 50  0001 C CNN
-	1    7550 9550
+P 8500 9600
+F 0 "U5" H 8700 9100 50  0000 C CNN
+F 1 "PCA9306" H 8200 9100 50  0000 C CNN
+F 2 "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm" H 8100 9950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/pca9306.pdf" H 8200 10050 50  0001 C CNN
+	1    8500 9600
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R R3
 U 1 1 60B4E799
-P 6900 8900
-F 0 "R3" V 6693 8900 50  0000 C CNN
-F 1 "200k" V 6784 8900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6830 8900 50  0001 C CNN
-F 3 "~" H 6900 8900 50  0001 C CNN
-	1    6900 8900
+P 7850 8950
+F 0 "R3" V 7643 8950 50  0000 C CNN
+F 1 "200k" V 7734 8950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7780 8950 50  0001 C CNN
+F 3 "~" H 7850 8950 50  0001 C CNN
+	1    7850 8950
 	0    1    1    0   
 $EndComp
-Text Label 6750 8900 2    50   ~ 0
+Text Label 7700 8950 2    50   ~ 0
 3V3_Pi
 Wire Wire Line
-	7050 8900 7100 8900
+	8000 8950 8050 8950
 Wire Wire Line
-	7100 8900 7100 9450
+	8050 8950 8050 9500
 Wire Wire Line
-	7100 9450 7150 9450
+	8050 9500 8100 9500
 Wire Wire Line
-	7450 9050 7450 8900
+	8400 9100 8400 8950
 Wire Wire Line
-	7450 8900 7100 8900
-Connection ~ 7100 8900
+	8400 8950 8050 8950
+Connection ~ 8050 8950
 $Comp
 L power:+1V8 #PWR0119
 U 1 1 60BAE57F
-P 8200 8700
-F 0 "#PWR0119" H 8200 8550 50  0001 C CNN
-F 1 "+1V8" H 8215 8873 50  0000 C CNN
-F 2 "" H 8200 8700 50  0001 C CNN
-F 3 "" H 8200 8700 50  0001 C CNN
-	1    8200 8700
+P 9150 8750
+F 0 "#PWR0119" H 9150 8600 50  0001 C CNN
+F 1 "+1V8" H 9165 8923 50  0000 C CNN
+F 2 "" H 9150 8750 50  0001 C CNN
+F 3 "" H 9150 8750 50  0001 C CNN
+	1    9150 8750
 	1    0    0    -1  
 $EndComp
-Text Label 7150 9550 2    50   ~ 0
+Text Label 8100 9600 2    50   ~ 0
 SCL_Pi
-Text Label 7150 9650 2    50   ~ 0
+Text Label 8100 9700 2    50   ~ 0
 SDA_Pi
 $Comp
 L power:GNDD #PWR0120
 U 1 1 60BAF071
-P 7550 10050
-F 0 "#PWR0120" H 7550 9800 50  0001 C CNN
-F 1 "GNDD" H 7554 9895 50  0000 C CNN
-F 2 "" H 7550 10050 50  0001 C CNN
-F 3 "" H 7550 10050 50  0001 C CNN
-	1    7550 10050
+P 8500 10100
+F 0 "#PWR0120" H 8500 9850 50  0001 C CNN
+F 1 "GNDD" H 8504 9945 50  0000 C CNN
+F 2 "" H 8500 10100 50  0001 C CNN
+F 3 "" H 8500 10100 50  0001 C CNN
+	1    8500 10100
 	1    0    0    -1  
 $EndComp
 Text Label 7200 4600 2    50   ~ 0
 SCL
 Text Label 7200 4700 2    50   ~ 0
 SDA
-Text Label 8550 9550 0    50   ~ 0
+Text Label 9500 9600 0    50   ~ 0
 SCL
-Text Label 8550 9650 0    50   ~ 0
+Text Label 9500 9700 0    50   ~ 0
 SDA
 Wire Wire Line
-	7950 9650 8350 9650
+	8900 9700 9300 9700
 Wire Wire Line
-	8550 9550 8050 9550
+	9500 9600 9000 9600
 Wire Wire Line
-	7950 9550 8050 9550
-Connection ~ 8050 9550
+	8900 9600 9000 9600
+Connection ~ 9000 9600
 Wire Wire Line
-	8350 9500 8350 9650
-Connection ~ 8350 9650
+	9300 9550 9300 9700
+Connection ~ 9300 9700
 Wire Wire Line
-	8350 9650 8550 9650
+	9300 9700 9500 9700
 Wire Wire Line
-	7650 9050 7650 9000
+	8600 9100 8600 9050
 Wire Wire Line
-	7650 9000 8050 9000
+	8600 9050 9000 9050
 Wire Wire Line
-	8050 9000 8350 9000
+	9000 9050 9300 9050
 Wire Wire Line
-	8350 9000 8350 9200
-Connection ~ 8050 9000
+	9300 9050 9300 9250
+Connection ~ 9000 9050
 Wire Wire Line
-	8050 9250 8050 9000
+	9000 9300 9000 9050
 Text Label 7200 5100 2    50   ~ 0
 CLK
 Text Notes 10350 9550 0    50   ~ 0
@@ -4073,56 +3987,56 @@ Connection ~ 12450 9300
 $Comp
 L power:GNDD #PWR0125
 U 1 1 60E5524F
-P 7650 8750
-F 0 "#PWR0125" H 7650 8500 50  0001 C CNN
-F 1 "GNDD" H 7654 8595 50  0000 C CNN
-F 2 "" H 7650 8750 50  0001 C CNN
-F 3 "" H 7650 8750 50  0001 C CNN
-	1    7650 8750
+P 8600 8800
+F 0 "#PWR0125" H 8600 8550 50  0001 C CNN
+F 1 "GNDD" H 8604 8645 50  0000 C CNN
+F 2 "" H 8600 8800 50  0001 C CNN
+F 3 "" H 8600 8800 50  0001 C CNN
+	1    8600 8800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C22
 U 1 1 60E55A8E
-P 7350 8700
-F 0 "C22" H 7465 8746 50  0000 L CNN
-F 1 "100n" H 7465 8655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7388 8550 50  0001 C CNN
-F 3 "~" H 7350 8700 50  0001 C CNN
-	1    7350 8700
+P 8300 8750
+F 0 "C22" H 8415 8796 50  0000 L CNN
+F 1 "100n" H 8415 8705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8338 8600 50  0001 C CNN
+F 3 "~" H 8300 8750 50  0001 C CNN
+	1    8300 8750
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7100 8900 7100 8700
+	8050 8950 8050 8750
 Wire Wire Line
-	7100 8700 7200 8700
+	8050 8750 8150 8750
 Wire Wire Line
-	7500 8700 7650 8700
+	8450 8750 8600 8750
 Wire Wire Line
-	7650 8700 7650 8750
+	8600 8750 8600 8800
 $Comp
 L Device:C C25
 U 1 1 60EBB28D
-P 7900 8700
-F 0 "C25" H 8015 8746 50  0000 L CNN
-F 1 "100n" H 8015 8655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7938 8550 50  0001 C CNN
-F 3 "~" H 7900 8700 50  0001 C CNN
-	1    7900 8700
+P 8850 8750
+F 0 "C25" H 8965 8796 50  0000 L CNN
+F 1 "100n" H 8965 8705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8888 8600 50  0001 C CNN
+F 3 "~" H 8850 8750 50  0001 C CNN
+	1    8850 8750
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7750 8700 7650 8700
-Connection ~ 7650 8700
+	8700 8750 8600 8750
+Connection ~ 8600 8750
 Wire Wire Line
-	8050 8700 8200 8700
+	9000 8750 9150 8750
 Wire Wire Line
-	8050 9000 8050 8800
+	9000 9050 9000 8850
 Wire Wire Line
-	8050 8800 8200 8800
+	9000 8850 9150 8850
 Wire Wire Line
-	8200 8800 8200 8700
-Connection ~ 8200 8700
+	9150 8850 9150 8750
+Connection ~ 9150 8750
 $Comp
 L Connector_Generic:Conn_01x03 J9
 U 1 1 60F9235F
@@ -4476,26 +4390,6 @@ Text Notes 8650 2250 0    50   ~ 0
 TPSE686K020R0150 
 Text Notes 800  11000 0    50   ~ 0
 It is completely fucked up. 22 pin connector is inverted on camera side. My mistake was interpreting it as the one on RPi Zero :-(
-Connection ~ 4850 8150
-Wire Wire Line
-	4850 8050 4850 8150
-Wire Wire Line
-	4800 8050 4850 8050
-Wire Wire Line
-	4850 8150 4850 8200
-Wire Wire Line
-	4800 8150 4850 8150
-$Comp
-L power:GNDD #PWR0111
-U 1 1 5F732CC1
-P 4850 8200
-F 0 "#PWR0111" H 4850 7950 50  0001 C CNN
-F 1 "GNDD" H 4854 8045 50  0000 C CNN
-F 2 "" H 4850 8200 50  0001 C CNN
-F 3 "" H 4850 8200 50  0001 C CNN
-	1    4850 8200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	12550 1700 13650 1700
 Wire Wire Line
@@ -4562,23 +4456,23 @@ Connection ~ 3700 4350
 $Comp
 L Connector_Generic:Conn_01x01 J14
 U 1 1 61BE0A01
-P 8350 9850
-F 0 "J14" V 8222 9930 50  0000 L CNN
-F 1 "Conn_01x01" V 8313 9930 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 8350 9850 50  0001 C CNN
-F 3 "~" H 8350 9850 50  0001 C CNN
-	1    8350 9850
+P 9300 9900
+F 0 "J14" V 9172 9980 50  0000 L CNN
+F 1 "Conn_01x01" V 9263 9980 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 9300 9900 50  0001 C CNN
+F 3 "~" H 9300 9900 50  0001 C CNN
+	1    9300 9900
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J12
 U 1 1 61BE245B
-P 8050 9750
-F 0 "J12" V 7922 9830 50  0000 L CNN
-F 1 "Conn_01x01" V 8013 9830 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 8050 9750 50  0001 C CNN
-F 3 "~" H 8050 9750 50  0001 C CNN
-	1    8050 9750
+P 9000 9800
+F 0 "J12" V 8872 9880 50  0000 L CNN
+F 1 "Conn_01x01" V 8963 9880 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 9000 9800 50  0001 C CNN
+F 3 "~" H 9000 9800 50  0001 C CNN
+	1    9000 9800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -4704,22 +4598,162 @@ F 9 "DSC6011JI1A-008.0000" H 12250 8350 50  0001 L CNN "Manufacturer_Part_Number
 	1    11000 8950
 	1    0    0    -1  
 $EndComp
+Text Notes 2650 7750 0    50   ~ 0
+This should be Molex 503480-2200 connector with top and bottom contacts.
 $Comp
-L myParts:54548-2271_connector_RPi_zero J1
-U 1 1 61DB5D1D
-P 4800 8050
-F 0 "J1" H 5250 8315 50  0000 C CNN
-F 1 "54548-2271_connector_RPi_zero" H 5250 8224 50  0000 C CNN
-F 2 "myFootprints:545482271_RPi_Zero_connector" H 5550 8150 50  0001 L CNN
-F 3 "http://www.molex.com/webdocs/datasheets/pdf/en-us//0545482271_FFC_FPC_CONNECTORS.pdf" H 5550 8050 50  0001 L CNN
-F 4 "FFC & FPC Connectors 0.5 FPC ZIF Hsg Assy ssy 22Ckt EmbsTp Pkg" H 5550 7950 50  0001 L CNN "Description"
-F 5 "1" H 5550 7850 50  0001 L CNN "Height"
-F 6 "538-54548-2271" H 5550 7750 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Molex/54548-2271?qs=qM7ngqbhX5X3ZiWzRWv9wA%3D%3D" H 5550 7650 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Molex" H 5550 7550 50  0001 L CNN "Manufacturer_Name"
-F 9 "54548-2271" H 5550 7450 50  0001 L CNN "Manufacturer_Part_Number"
-	1    4800 8050
-	-1   0    0    -1  
+L myParts:503480-2200 J8
+U 1 1 619630E2
+P 6350 8050
+F 0 "J8" V 7504 8378 50  0000 L CNN
+F 1 "503480-2200" V 7595 8378 50  0000 L CNN
+F 2 "myFootprints:Molex-503480-2200" H 6350 8650 50  0001 L CNN
+F 3 "http://www.molex.com/webdocs/datasheets/pdf/en-us/5034802200_FFC_FPC_CONNECTORS.pdf" H 6350 8750 50  0001 L CNN
+F 4 "22" H 6350 8850 50  0001 L CNN "Circuits Loaded"
+F 5 "Manufacturer URL" H 6350 8950 50  0001 L CNN "Component Link 1 Description"
+F 6 "http://www.molex.com/molex/index.jsp" H 6350 9050 50  0001 L CNN "Component Link 1 URL"
+F 7 "Package Specification" H 6350 9150 50  0001 L CNN "Component Link 3 Description"
+F 8 "http://www.molex.com/pdm_docs/sd/5034802200_sd.pdf" H 6350 9250 50  0001 L CNN "Component Link 3 URL"
+F 9 "Dual" H 6350 9350 50  0001 L CNN "Contact Position"
+F 10 "0.5A" H 6350 9450 50  0001 L CNN "Current Max per Contact"
+F 11 "10" H 6350 9550 50  0001 L CNN "Durability mating cycles max"
+F 12 "90degrees Angle" H 6350 9650 50  0001 L CNN "Entry Angle"
+F 13 "1.00mm" H 6350 9750 50  0001 L CNN "Mated Height"
+F 14 "Phosphor Bronze" H 6350 9850 50  0001 L CNN "Material   Metal"
+F 15 "Gold" H 6350 9950 50  0001 L CNN "Material   Plating Mating"
+F 16 "Gold, Tin" H 6350 10050 50  0001 L CNN "Material   Plating Termination"
+F 17 "Surface Mount" H 6350 10150 50  0001 L CNN "Mounting Technology"
+F 18 "1" H 6350 10250 50  0001 L CNN "Number of Rows"
+F 19 "Right Angle" H 6350 10350 50  0001 L CNN "Orientation"
+F 20 "No" H 6350 10450 50  0001 L CNN "PCB Locator"
+F 21 "Yes" H 6350 10550 50  0001 L CNN "PCB Retention"
+F 22 "22-Lead FPC Connector, Pitch 0.5 mm" H 6350 10650 50  0001 L CNN "Package Description"
+F 23 "Rev. F, 09/2012" H 6350 10750 50  0001 L CNN "Package Version"
+F 24 "Tape and Reel" H 6350 10850 50  0001 L CNN "Packing"
+F 25 "0.50mm" H 6350 10950 50  0001 L CNN "Pitch   Mating Interface"
+F 26 "Yes" H 6350 11050 50  0001 L CNN "Polarized to PCB"
+F 27 "No" H 6350 11150 50  0001 L CNN "Stackable"
+F 28 "50V AC (RMS)/DC" H 6350 11250 50  0001 L CNN "Voltage Max"
+F 29 "Conn" H 6350 11350 50  0001 L CNN "category"
+F 30 "1153631" H 6350 11450 50  0001 L CNN "ciiva ids"
+F 31 "0f28cd1d70f1283b" H 6350 11550 50  0001 L CNN "library id"
+F 32 "Molex" H 6350 11650 50  0001 L CNN "manufacturer"
+F 33 "503480-2200" H 6350 11750 50  0001 L CNN "package"
+F 34 "1411372333" H 6350 11850 50  0001 L CNN "release date"
+F 35 "Yes" H 6350 11950 50  0001 L CNN "rohs"
+F 36 "4F89AEA4-6AF7-4802-A31F-299738A38021" H 6350 12050 50  0001 L CNN "vault revision"
+F 37 "yes" H 6350 12150 50  0001 L CNN "imported"
+	1    6350 8050
+	0    1    1    0   
 $EndComp
-Connection ~ 3900 10150
+Text Label 6150 10150 2    50   ~ 0
+3V3_Pi
+Text Label 6150 10050 2    50   ~ 0
+SDA_Pi
+Text Label 6150 9950 2    50   ~ 0
+SCL_Pi
+Wire Wire Line
+	6250 9850 6350 9850
+Wire Wire Line
+	6350 9550 6250 9550
+Wire Wire Line
+	6250 9550 6250 9850
+Connection ~ 6250 9850
+Wire Wire Line
+	6350 9250 6250 9250
+Wire Wire Line
+	6250 9250 6250 9550
+Connection ~ 6250 9550
+Wire Wire Line
+	6350 8950 6250 8950
+Wire Wire Line
+	6250 8950 6250 9250
+Connection ~ 6250 9250
+Wire Wire Line
+	6350 8650 6250 8650
+Wire Wire Line
+	6250 8650 6250 8950
+Connection ~ 6250 8950
+Wire Wire Line
+	6350 8350 6250 8350
+Wire Wire Line
+	6250 8350 6250 8650
+Connection ~ 6250 8650
+Wire Wire Line
+	6350 8050 6250 8050
+Wire Wire Line
+	6250 8050 6250 8350
+Connection ~ 6250 8350
+Wire Wire Line
+	6200 9650 6350 9650
+Wire Wire Line
+	6350 9750 6200 9750
+Text Label 6150 8150 2    50   ~ 0
+D1-
+Text Label 6150 8250 2    50   ~ 0
+D1+
+Text Label 6150 8450 2    50   ~ 0
+D2-
+Text Label 6150 8550 2    50   ~ 0
+D2+
+Text Label 6150 8750 2    50   ~ 0
+CLK-
+Text Label 6150 8850 2    50   ~ 0
+CLK+
+Text Label 6150 9350 2    50   ~ 0
+D4-
+Text Label 6150 9450 2    50   ~ 0
+D4+
+Text Label 6150 9150 2    50   ~ 0
+D3+
+Text Label 6150 9050 2    50   ~ 0
+D3-
+Wire Wire Line
+	6150 8150 6350 8150
+Wire Wire Line
+	6150 8250 6350 8250
+Wire Wire Line
+	6150 8450 6350 8450
+Wire Wire Line
+	6150 8550 6350 8550
+Wire Wire Line
+	6150 8750 6350 8750
+Wire Wire Line
+	6150 8850 6350 8850
+Wire Wire Line
+	6150 9050 6350 9050
+Wire Wire Line
+	6150 9150 6350 9150
+Wire Wire Line
+	6150 9350 6350 9350
+Wire Wire Line
+	6150 9450 6350 9450
+Wire Wire Line
+	6150 9950 6350 9950
+Wire Wire Line
+	6150 10050 6350 10050
+Wire Wire Line
+	6150 10150 6350 10150
+$Comp
+L power:GNDD #PWR0126
+U 1 1 619F574B
+P 6250 10600
+F 0 "#PWR0126" H 6250 10350 50  0001 C CNN
+F 1 "GNDD" H 6254 10445 50  0000 C CNN
+F 2 "" H 6250 10600 50  0001 C CNN
+F 3 "" H 6250 10600 50  0001 C CNN
+	1    6250 10600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 9850 6250 10350
+Wire Wire Line
+	6350 10450 6250 10450
+Connection ~ 6250 10450
+Wire Wire Line
+	6250 10450 6250 10600
+Wire Wire Line
+	6350 10350 6250 10350
+Connection ~ 6250 10350
+Wire Wire Line
+	6250 10350 6250 10450
 $EndSCHEMATC
